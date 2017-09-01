@@ -1,0 +1,18 @@
+{
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "env": {
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "plugins": ["react", "jsx-a11y", "import"],
+  "globals": {
+    "document": true,
+    "window": true,
+    "localStorage": true,
+    "FormData": true,
+    "Blob": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8
+  }
+}
