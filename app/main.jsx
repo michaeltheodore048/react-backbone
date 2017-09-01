@@ -1,6 +1,14 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 import { render } from 'react-dom';
+// import 'babel-polyfill';
 
-import Login from './scenes/Login';
+import routes from './routes';
+import store from './store';
 
-render(<Login title="Hello world!" />, document.getElementById('root'));
+const Root = () =>
+  <Provider store={store}>
+    {routes}
+  </Provider>;
+
+render(routes, document.getElementById('root'));

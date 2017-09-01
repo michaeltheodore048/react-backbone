@@ -3,11 +3,11 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './app/main.jsx',
+  entry: `${__dirname}/app/main.jsx`,
   output: {
     publicPath: `/build`,
     path: `${__dirname}/build`,
-    filename: '[name][chunkhash].js',
+    filename: '[name]_[chunkhash].js',
   },
 
   module: {
@@ -60,7 +60,7 @@ module.exports = {
       minChunks: Infinity,
     }),
     new HTMLWebpackPlugin({
-      template: './assets/index.template.html',
+      template: `${__dirname}/assets/index.template.html`,
     }),
   ],
 
