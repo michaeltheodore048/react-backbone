@@ -1,8 +1,8 @@
-# DOT - ADMIN DASHBOARD
+# React Backbone
 
 ## Description
 
-DOT web application for admin to manage orders.
+A react backbone.
 
 ## Technologies
 - React 15.6.1 (JS Framework)

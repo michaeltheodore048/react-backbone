@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Radion-DOT Admin Website",
   "now": {
-    "name": "dotco-admin",
-    "alias": "dotco.admin"
+    "name": "react-backbone",
+    "alias": "react-backbone.now.sh"
   },
   "scripts": {
     "dev": "node server-dev.js",
