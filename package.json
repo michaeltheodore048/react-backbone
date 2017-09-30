@@ -11,7 +11,7 @@
     "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress",
     "server": "NODE_ENV=production node server.js",
     "test": "jest --coverage",
-    "start": "npm run server"
+    "start": "npm run build && npm run server"
   },
   "repository": "https://github.com/radionbot/admin-web.git",
   "author": "Radion",
