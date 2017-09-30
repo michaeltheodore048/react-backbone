@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   entry: `${__dirname}/app/main.jsx`,
@@ -66,5 +67,6 @@ module.exports = {
 
   resolve: {
     extensions: ['.js', '.jsx'],
+    modules: [path.join(__dirname, 'app'), 'node_modules'],
   },
 };
