@@ -8,10 +8,11 @@
   },
   "scripts": {
     "dev": "node server-dev.js",
-    "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress",
+    "build":
+      "NODE_ENV=production webpack --config ./webpack.production.config.js --progress",
     "server": "NODE_ENV=production node server.js",
     "test": "jest --coverage",
-    "start": "npm run build && npm run server"
+    "start": "yarn build && yarn server"
   },
   "repository": "https://github.com/radionbot/admin-web.git",
   "author": "Radion",
@@ -60,7 +61,8 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|scss)$": "identity-obj-proxy"
     }
   }

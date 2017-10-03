@@ -2,7 +2,7 @@ import React from 'react';
 
 import { shallow } from 'enzyme';
 
-import Login from '../Login';
+import Welcome from '../Welcome';
 
 jest.mock('../styles.scss', () => {
   const data = {
@@ -13,9 +13,9 @@ jest.mock('../styles.scss', () => {
 
 describe('Glph Component', () => {
   test('Expect render passed param', () => {
-    const title = 'This is login page';
-    const LoginComponent = shallow(<Login title={title} />);
+    const text = 'Welcome';
+    const WelcomeComponent = shallow(<Welcome />);
 
-    expect(LoginComponent.text()).toEqual(title);
+    expect(WelcomeComponent.text()).toEqual(text);
   });
 });
